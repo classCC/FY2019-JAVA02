@@ -1,14 +1,13 @@
-package com.abnormal;
+package com.abnormal.exception;
 
 public class RegisterException extends RuntimeException {
 
-	public RegisterException(String rgs) {
-        super(rgs);
+	public RegisterException(String msg) {
+        super(msg);
     }
 	
 	public RegisterException() {
 		
 	}
-	
 	
 }

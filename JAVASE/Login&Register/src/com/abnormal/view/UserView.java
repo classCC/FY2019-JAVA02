@@ -1,9 +1,9 @@
-package com.abnormal;
+package com.abnormal.view;
 
 public interface UserView {
 
-	void login();
 	
+	void login();
 	void register();
 	
 	
