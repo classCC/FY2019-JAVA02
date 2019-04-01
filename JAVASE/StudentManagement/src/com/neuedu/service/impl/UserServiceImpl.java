@@ -14,9 +14,6 @@ public class UserServiceImpl implements UserService {
 		System.out.println("******添加学生信息******");
 		Scanner s=new Scanner(System.in);
 		System.out.print("请输入学生id：");
-		id=s.nextLine();
-		System.out.print("请输入学生姓名：");
-		String name=s.nextLine();
 		
 	}
 
