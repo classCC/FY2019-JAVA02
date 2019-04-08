@@ -16,7 +16,7 @@ public class StringO {
 		System.out.println(s1.substring(1,4));	//返回一个新的字符串，它是此字符串的一个子字符串
 		
 		String s3="a-b-c";
-		String[] ss=s3.split("-");			//按-拆分
+		String[] ss=s3.split("-");				//按-拆分
 		for(int i=0;i<ss.length;i++) {
 			System.out.println(ss[i]);
 		}

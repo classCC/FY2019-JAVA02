@@ -1,14 +1,16 @@
 package com.wz.service;
 
+import java.util.List;
+
 import com.wz.pojo.Student;
 
 public interface Service {
 
-	void checkmsg(Student[] student);
-	void addmsg(Student[] student);
-	void deletemsg(Student[] student,Student[] student1);
-	void changemsg(Student[] student);
-	void changeall(Student[] student);
-	void changesome(Student[] student);
+	void checkmsg(/*List<Student> student*/);
+	void addmsg(/*List<Student> student*/);
+	void deletemsg(/*List<Student> student*/);
+	void changemsg(/*List<Student> student*/);
+	void changeall(/*List<Student> student*/);
+	void changesome(/*List<Student> student*/);
 	
 }

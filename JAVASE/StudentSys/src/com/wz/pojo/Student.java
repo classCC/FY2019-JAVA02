@@ -1,6 +1,6 @@
 package com.wz.pojo;
 
-public class Student {
+public class Student implements Comparable<Student>{
 
 	public int id;
 	public String name;
@@ -10,10 +10,11 @@ public class Student {
 	public String address;
 	public int phone;
 	public String email;
+	public int score;
 	
 	//定义Student初始化的输入参数
-	public Student(int id,String name,int age,String sex,
-			String grade,String address,int phone,String email){
+	public Student(int id,String name,int age,String sex,String grade,
+			String address,int phone,String email,int score){
 		this.id=id;
 		this.name=name;
 		this.age=age;
@@ -22,12 +23,16 @@ public class Student {
 		this.address=address;
 		this.phone=phone;
 		this.email=email;
+		this.score=score;
 	}
 	
 	public Student(){
-		Student[] student=new Student[5];			//定义一个长度为5的student数组
-		Student s=new Student(1,"a",10,"a","a","a",1,"a");	//定义一个用户student和他的属性。
-		student[0]=s;							//把s保存到student的第一个数组
+		
+	}
+
+	
+	public int compareTo(Student o) {
+		return this.score-o.score;
 	}
 
 	public int getId() {
@@ -94,4 +99,12 @@ public class Student {
 		this.email = email;
 	}
 	
+	public int getScore() {
+		return score;
+	}
+
+	public void setScore(int score) {
+		this.score = score;
+	}
+
 }
